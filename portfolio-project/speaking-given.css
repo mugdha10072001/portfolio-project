@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@500&family=Playfair+Display:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.preloader {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  transition: opacity 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  transition: all 0.3s ease-in;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a,
+p,
+span {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif !important;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+  background-color: white;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 18px !important;
+}
+
+.nav-link:hover {
+  margin-top: 0rem;
+  border-bottom: 1px solid white;
+}
+
+.btn-book {
+  color: white !important;
+  border: 1px solid white;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+#section-one {
+  height: 25rem;
+  margin-top: -7rem;
+}
+
+.about-banner-clouds {
+  height: 12rem;
+  position: relative;
+  z-index: -1;
+}
+
+.breadcrumb-item a {
+  color: #fff !important;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: white !important;
+}
+
+.about-banner-clouds img {
+  position: absolute;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  height: 26rem;
+  margin-top: 0rem;
+}
+
+.about-banner-sun {
+  width: 54%;
+  position: absolute;
+  z-index: 1;
+}
+
+.about-banner-mountain {
+  position: absolute;
+  width: 100%;
+  /* top: -11rem; */
+  z-index: 2;
+}
+
+.banner-heading {
+  color: white !important;
+  font-size: 4rem !important;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.second-sec,
+#section-third {
+  padding: 100px 0;
+}
+
+.second-sec h2 {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.second-sec p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.box {
+  padding: 20px 20px 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.check h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.span-1 {
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+  color: #bfbfbf;
+}
+
+.box:hover .span-1 {
+  color: #ab5836 !important;
+}
+
+.schedule-heading {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.schedule-para {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.schedule-para-1 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form {
+  padding-bottom: 40px;
+}
+
+.label1 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.first,
+.last,
+.email,
+.phone {
+  outline: 0 !important;
+  width: 100%;
+  padding: 13px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.events-heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  /* margin-top: 10px; */
+}
+
+.line {
+  border: 0.5px solid #818181;
+  margin-bottom: 15px;
+}
+
+.label-2 {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.events-form,
+.form-info input {
+  width: 100%;
+  padding: 10px;
+  outline: 0 !important;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.form-info {
+  padding: 55px 0;
+}
+
+.form-info-box h5,
+.event-attendees h5 {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.form-info-box p,
+.event-attendees p {
+  color: #c8c8c8;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.personal-info {
+  margin-top: 15rem;
+}
+
+.personal-info h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.personal-info p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0.2rem !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+#footer {
+  background-image: url(images/footer-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding: 40px 0;
+}
+
+.left-side h2 {
+  color: white;
+  font-size: 25px;
+}
+
+.left-side p {
+  color: white;
+  padding-top: 6rem;
+  font-size: 18px;
+}
+
+.right-side h2 {
+  color: white;
+  padding-left: 29px;
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+
+ul {
+  list-style: none;
+}
+
+.quick-links li a {
+  line-height: 39px;
+  color: white;
+  font-size: 17px;
+}
+
+.quick-links li p {
+  text-transform: capitalize;
+  font-size: 17px;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-link {
+    color: white !important;
+  }
+
+  .btn-book {
+    color: white !important;
+    border: 1px solid white;
+  }
+
+  #section-one {
+    height: 30rem;
+  }
+
+  .banner-heading {
+    color: white !important;
+    font-weight: 500;
+    padding-top: 0rem;
+  }
+
+  .left-side p {
+    padding-top: 18rem;
+  }
+
+  .peoples img {
+    width: 100% !important;
+  }
+
+  .personal-info {
+    margin-top: 51rem;
+  }
+
+  .contact-me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .right-side h2 {
+    padding-bottom: 0 !important;
+  }
+
+  .quick-links li p {
+    text-transform: capitalize;
+    font-size: 15px;
+    padding-top: 6px;
+  }
+
+  .last {
+    margin-top: 12px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1035px) {
+  .navbar-brand img {
+    width: 80%;
+  }
+
+  .btn-book {
+    white-space: nowrap;
+  }
+
+  .nav-link {
+    white-space: nowrap;
+  }
+
+  .navs-links {
+    column-gap: 3rem !important;
+  }
+
+  .quick-links li a {
+    font-size: 16px;
+  }
+
+  .quick-links li p {
+    text-transform: capitalize;
+    font-size: 16px;
+    padding-top: 9px;
+  }
+
+  .personal-info {
+    margin-top: 28rem;
+  }
+
+  .mail {
+    margin-left: -10px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .navbar-brand {
+    width: 70% !important;
+  }
+
+  .nav-link {
+    color: white !important;
+  }
+
+  .btn-book {
+    color: white !important;
+    border: 1px solid white;
+  }
+
+  #section-one {
+    height: 25rem !important;
+  }
+
+  .banner-heading {
+    color: white !important;
+    font-weight: 500;
+    font-size: 2.2rem !important;
+    margin-top: 15px;
+  }
+
+  .left-side p {
+    padding-top: 3rem !important;
+  }
+
+  ul {
+    padding-left: 0 !important;
+  }
+
+  .right-side h2 {
+    padding-left: 0 !important;
+  }
+
+  .personal-info {
+    margin-top: 4rem;
+  }
+
+  .nav-link:hover {
+    border: none !important;
+  }
+}

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="preloader" id="preloader">
+      <img src="images/preloader.gif" alt="preloader" width="25%" />
+    </div>
+    <nav
+      class="navbar navbar-expand-lg navs-position"
+      data-aos="fade-down"
+      data-aos-duration="2500"
+      style="
+        background: rgba(255, 255, 255, 0.19);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.3px);
+        z-index: 99;
+      "
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="index.html"
+          ><img
+            src="images/sumit-thakur-logo.png"
+            alt="sumit-thakur-logo "
+            width="70%"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto ms-auto mb-2 mb-lg-0"
+            style="column-gap: 3rem"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clients.html">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+          </ul>
+          <a href="consultation-form.html" class="btn-book"
+            >your first call to me : <span>free</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div id="banner">
+      <div class="about-banner-clouds">
+        <img
+          src="images/about-banner.png"
+          alt=""
+          class=""
+          data-aos="fade-up"
+          data-aos-duration="3200"
+        />
+        <img
+          src="images/about-sun.png"
+          alt=""
+          class="about-banner-sun"
+          data-aos="fade-up"
+          data-aos-duration="1100"
+        />
+        <img
+          src="images/about-mountain.png"
+          alt=""
+          class="about-banner-mountain"
+          data-aos="fade-up"
+          data-aos-duration="3500"
+        />
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12">
+            <h1 class="banner-heading">Blog</h1>
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item text-white" aria-current="page">
+                  Blog
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section-one">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12">
+            <h1 class="recent-post-heading">
+              Recent blog post
+
+              <button class="btn" onclick="filterSelection('all')">
+                Show all
+              </button>
+              <button class="btn" onclick="filterSelection('business')">
+                Business
+              </button>
+              <button class="btn" onclick="filterSelection('brands')">
+                Brands
+              </button>
+              <button class="btn" onclick="filterSelection('marketing')">
+                Marketing
+              </button>
+            </h1>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-4 col-md-4 col-12">
+            <a href="blog-landing.html">
+              <div class="blog filter business">
+                <div class="blog-img">
+                  <img src="images/blog.png" alt="blog" width="100%" />
+                </div>
+                <div class="blog-info">
+                  <h2>
+                    Recent blog posts
+                    <p
+                      style="
+                        color: #fff;
+                        background-color: #000;
+                        padding: 2px 8px;
+                      "
+                    >
+                      Business
+                    </p>
+                  </h2>
+                  <a href="blog-landing.html">
+                    <p class="para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p></a
+                  >
+                  <div class="blog-date">
+                    <img src="images/blog-person.png" alt="blog-person" />
+                    <p>Full Name</p>
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        class="svg-1"
+                      >
+                        <path
+                          d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
+                        />
+                      </svg>
+                      11 Jan 2023</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <a href="blog-landing.html">
+              <div class="blog filter business">
+                <div class="blog-img">
+                  <img src="images/blog.png" alt="blog" width="100%" />
+                </div>
+                <div class="blog-info">
+                  <h2>
+                    Recent blog posts
+                    <p
+                      style="
+                        color: #fff;
+                        background-color: #000;
+                        padding: 2px 8px;
+                      "
+                    >
+                      Business
+                    </p>
+                  </h2>
+                  <a href="blog-landing.html">
+                    <p class="para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p></a
+                  >
+                  <div class="blog-date">
+                    <img src="images/blog-person.png" alt="blog-person" />
+                    <p>Full Name</p>
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        class="svg-1"
+                      >
+                        <path
+                          d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
+                        />
+                      </svg>
+                      11 Jan 2023</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <a href="blog-landing.html">
+              <div class="blog filter business">
+                <div class="blog-img">
+                  <img src="images/blog.png" alt="blog" width="100%" />
+                </div>
+                <div class="blog-info">
+                  <h2>
+                    Recent blog posts
+                    <p
+                      style="
+                        color: #fff;
+                        background-color: #000;
+                        padding: 2px 8px;
+                      "
+                    >
+                      Business
+                    </p>
+                  </h2>
+                  <a href="blog-landing.html">
+                    <p class="para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p></a
+                  >
+                  <div class="blog-date">
+                    <img src="images/blog-person.png" alt="blog-person" />
+                    <p>Full Name</p>
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        class="svg-1"
+                      >
+                        <path
+                          d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
+                        />
+                      </svg>
+                      11 Jan 2023</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 mt-3">
+            <a href="blog-landing.html">
+              <div class="blog filter brands">
+                <div class="blog-img">
+                  <img src="images/blog.png" alt="blog" width="100%" />
+                </div>
+                <div class="blog-info">
+                  <h2>
+                    Recent blog posts
+                    <p
+                      style="
+                        color: #fff;
+                        background-color: #000;
+                        padding: 2px 8px;
+                      "
+                    >
+                      Brands
+                    </p>
+                  </h2>
+                  <a href="blog-landing.html">
+                    <p class="para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p></a
+                  >
+                  <div class="blog-date">
+                    <img src="images/blog-person.png" alt="blog-person" />
+                    <p>Full Name</p>
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        class="svg-1"
+                      >
+                        <path
+                          d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
+                        />
+                      </svg>
+                      11 Jan 2023</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 mt-3">
+            <a href="blog-landing.html">
+              <div class="blog filter brands">
+                <div class="blog-img">
+                  <img src="images/blog.png" alt="blog" width="100%" />
+                </div>
+                <div class="blog-info">
+                  <h2>
+                    Recent blog posts
+                    <p
+                      style="
+                        color: #fff;
+                        background-color: #000;
+                        padding: 2px 8px;
+                      "
+                    >
+                      Brands
+                    </p>
+                  </h2>
+                  <a href="blog-landing.html">
+                    <p class="para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p></a
+                  >
+                  <div class="blog-date">
+                    <img src="images/blog-person.png" alt="blog-person" />
+                    <p>Full Name</p>
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        class="svg-1"
+                      >
+                        <path
+                          d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
+                        />
+                      </svg>
+                      11 Jan 2023</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 mt-3">
+            <a href="blog-landing.html">
+              <div class="blog filter brands">
+                <div class="blog-img">
+                  <img src="images/blog.png" alt="blog" width="100%" />
+                </div>
+                <div class="blog-info">
+                  <h2>
+                    Recent blog posts
+                    <p
+                      style="
+                        color: #fff;
+                        background-color: #000;
+                        padding: 2px 8px;
+                      "
+                    >
+                      Brands
+                    </p>
+                  </h2>
+                  <a href="blog-landing.html">
+                    <p class="para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p></a
+                  >
+                  <div class="blog-date">
+                    <img src="images/blog-person.png" alt="blog-person" />
+                    <p>Full Name</p>
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        class="svg-1"
+                      >
+                        <path
+                          d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
+                        />
+                      </svg>
+                      11 Jan 2023</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 mt-4">
+            <a href="blog-landing.html">
+              <div class="blog filter marketing">
+                <div class="blog-img">
+                  <img src="images/blog.png" alt="blog" width="100%" />
+                </div>
+                <div class="blog-info">
+                  <h2>
+                    Recent blog posts
+                    <p
+                      style="
+                        color: #fff;
+                        background-color: #000;
+                        padding: 2px 8px;
+                      "
+                    >
+                      Marketing
+                    </p>
+                  </h2>
+                  <a href="blog-landing.html">
+                    <p class="para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p></a
+                  >
+                  <div class="blog-date">
+                    <img src="images/blog-person.png" alt="blog-person" />
+                    <p>Full Name</p>
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        class="svg-1"
+                      >
+                        <path
+                          d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
+                        />
+                      </svg>
+                      11 Jan 2023</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 mt-4">
+            <a href="blog-landing.html">
+              <div class="blog filter marketing">
+                <div class="blog-img">
+                  <img src="images/blog.png" alt="blog" width="100%" />
+                </div>
+                <div class="blog-info">
+                  <h2>
+                    Recent blog posts
+                    <p
+                      style="
+                        color: #fff;
+                        background-color: #000;
+                        padding: 2px 8px;
+                      "
+                    >
+                      Marketing
+                    </p>
+                  </h2>
+                  <a href="blog-landing.html">
+                    <p class="para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p></a
+                  >
+                  <div class="blog-date">
+                    <img src="images/blog-person.png" alt="blog-person" />
+                    <p>Full Name</p>
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        class="svg-1"
+                      >
+                        <path
+                          d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
+                        />
+                      </svg>
+                      11 Jan 2023</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 mt-4">
+            <a href="blog-landing.html">
+              <div class="blog filter marketing">
+                <div class="blog-img">
+                  <img src="images/blog.png" alt="blog" width="100%" />
+                </div>
+                <div class="blog-info">
+                  <h2>
+                    Recent blog posts
+                    <p
+                      style="
+                        color: #fff;
+                        background-color: #000;
+                        padding: 2px 8px;
+                      "
+                    >
+                      Marketing
+                    </p>
+                  </h2>
+                  <a href="blog-landing.html">
+                    <p class="para">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p></a
+                  >
+                  <div class="blog-date">
+                    <img src="images/blog-person.png" alt="blog-person" />
+                    <p>Full Name</p>
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        class="svg-1"
+                      >
+                        <path
+                          d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
+                        />
+                      </svg>
+                      11 Jan 2023</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="left-side">
+              <a href=""
+                ><img
+                  src="images/sumit-thakur-logo.png"
+                  alt="sumit-thakur-logo"
+                  width="48%"
+              /></a>
+              <p>
+                Vivamus sagittis nibh et suscipit congue. Nulla nec ornare nibh.
+                Vestibulum ante ipsum primis in facius
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-8 col-md-8 col-12"
+            style="border-left: 1px solid #efefef"
+          >
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="right-side">
+                  <h2>Quick Links</h2>
+                  <ul class="quick-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li>
+                      <a href="products-and-services.html"
+                        >Products & Services</a
+                      >
+                    </li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="book.html">Books</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="right-side">
+                  <h2>Social Links</h2>
+                  <ul class="quick-links">
+                    <li><a href="https://in.linkedin.com/">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/?lang=en">Twitter</a></li>
+                    <li>
+                      <a href="https://www.instagram.com/accounts/login/"
+                        >Instagram</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/login/">Facebook</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/">Youtube</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="right-side">
+                  <h2>Contact Me</h2>
+                  <ul class="quick-links">
+                    <li><a href="#">+913958784595</a></li>
+                    <li>
+                      <a href="#" class="email-id">sumithakur@gmail.com</a>
+                    </li>
+                    <li>
+                      <p>plot no 1, tiranga square, Nandanvan, Nagpur 440012</p>
+                    </li>
+                    <li><a href="speaking-given.html">Book Me</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="blog.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      setTimeout(() => {
+        AOS.init();
+      }, 2000);
+    </script>
+  </body>
+</html>

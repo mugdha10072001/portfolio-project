@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Consultation form</title>
+    <link rel="stylesheet" href="consultation-form.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+  </head>
+
+  <body>
+    <div class="preloader" id="preloader">
+      <img src="images/preloader.gif" alt="preloader" width="25%" />
+    </div>
+    <nav class="navbar navbar-expand-lg" style="background-color: #f0f0f0">
+      <div class="container-fluid">
+        <a class="navbar-brand text-dark" href="index.html"
+          ><img src="images/navbar-logo.png" alt="navbar-logo" width="54%"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 navs-links"
+            style="column-gap: 3rem"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clients.html">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+          </ul>
+          <a href="consultation-form.html" class="btn-book"
+            >your first call to me : <span>free</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div id="section-first">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12 text-center">
+            <h1 class="form-heading">Consultation Form</h1>
+          </div>
+        </div>
+        <div class="row"></div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button text-center"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Services
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Inventore, velit accusantium itaque eius sapiente saepe
+                consectetur nostrum id non maiores, reiciendis debitis officia
+                esse, harum fuga veritatis natus ducimus! Assumenda? Soluta
+                pariatur error praesentium reprehenderit perferendis cupiditate
+                voluptates ad eum dignissimos officiis in repellat .
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed text-center"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                When
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <section>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <div class="small-12 medium-5 columns">
+                        <div
+                          id="datepicker"
+                          style="
+                            display: block;
+                            width: 60%;
+                            margin-left: auto;
+                            margin-right: auto;
+                            margin-top: 1rem;
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <div class="small-12 medium-7 columns">
+                        <div class="spin-me"></div>
+
+                        <div class="master-container-slots">
+                          <div
+                            class="morning-container callout"
+                            style="margin-bottom: 18px"
+                          >
+                            <p>Morning</p>
+                            <div class="flex-container-morning"></div>
+                          </div>
+
+                          <div class="afternoon-container callout">
+                            <p>Afternoon</p>
+                            <div class="flex-container-afternoon"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="small-12 medium-4 medium-centered columns">
+                      <a class="button form-submit disabled">Submit</a>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed text-center"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                For Who
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12 text-center">
+                      <h2 class="personal-info-heading">
+                        Personal Information
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="row form">
+                    <div class="col-lg-4 col-md-4 col-12 mt-3">
+                      <label>Full Name</label> <br />
+                      <input
+                        type="text"
+                        placeholder="Your Name *"
+                        id="name"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 mt-3">
+                      <label>Email Id</label> <br />
+                      <input
+                        type="email"
+                        placeholder="Your Email Id *"
+                        id="name"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 mt-3">
+                      <label>Contact Number</label> <br />
+                      <input
+                        type="tel"
+                        id="name"
+                        required
+                        placeholder="Enter your contact number*"
+                      />
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-12 mt-3">
+                      <label>Address</label> <br />
+                      <textarea
+                        id="name"
+                        required
+                        placeholder="Enter address*"
+                      ></textarea>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 mt-3">
+                      <label>State</label> <br />
+                      <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter state *"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 mt-3">
+                      <label>City</label> <br />
+                      <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter city *"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 mt-3">
+                      <label>Pincode</label> <br />
+                      <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter state *"
+                        required
+                      />
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-12 text-center mt-5">
+                      <a href="#" class="submit">submit</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="left-side">
+              <a href=""
+                ><img
+                  src="images/sumit-thakur-logo.png"
+                  alt="sumit-thakur-logo"
+                  width="48%"
+              /></a>
+              <p>
+                Vivamus sagittis nibh et suscipit congue. Nulla nec ornare nibh.
+                Vestibulum ante ipsum primis in facius
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-8 col-md-8 col-12"
+            style="border-left: 1px solid #efefef"
+          >
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="right-side">
+                  <h2>Quick Links</h2>
+                  <ul class="quick-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li>
+                      <a href="products-and-services.html"
+                        >Products & Services</a
+                      >
+                    </li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="book.html">Books</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="right-side">
+                  <h2>Social Links</h2>
+                  <ul class="quick-links">
+                    <li><a href="https://in.linkedin.com/">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/?lang=en">Twitter</a></li>
+                    <li>
+                      <a href="https://www.instagram.com/accounts/login/"
+                        >Instagram</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/login/">Facebook</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/">Youtube</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 contact-me">
+                <div class="right-side">
+                  <h2>Contact Me</h2>
+                  <ul class="quick-links">
+                    <li><a href="#">+913958784595</a></li>
+                    <li><a href="#" class="mail">sumithakur@gmail.com</a></li>
+                    <li>
+                      <p>plot no 1, tiranga square, Nandanvan, Nagpur 440012</p>
+                    </li>
+                    <li><a href="speaking-given.html">Book Me</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="consultation-form.js"></script>
+  </body>
+</html>
